@@ -1,0 +1,257 @@
+.paginaInicial {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.background {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.conteudo {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.logoRedonda {
+  position: absolute;
+  height: 300px;
+  top:5rem;
+  left: 2rem;
+  z-index: 100;
+}
+
+.navbar {
+  background-color: #ebe7d6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: background-color 0.3s ease;
+  font-family: Novicento;
+}
+
+/* Z-index normal (sem scroll) */
+.navbar-zindex-normal {
+  z-index: 3;
+}
+
+/* Z-index alto (com scroll) */
+.navbar-zindex-high {
+  z-index:400;
+}
+
+.navbar.scrolled {
+  background-color: #416110;
+}
+
+.navbar.scrolled .links a {
+  color: #ebe7d6;
+}
+
+.navbar.scrolled .links a:hover {
+  color: #d1e0c2; 
+}
+
+.navbar.scrolled .menuBtn {
+  color: #ebe7d6; 
+}
+
+.logoEscrita {
+  height: 60px;
+}
+
+.links {
+  display: flex;
+  gap: 100px;
+  color: #416110;
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 280px; 
+}
+
+.links a {
+  text-decoration: none;
+  color: #416110;
+  transition: color 0.3s;
+}
+
+.links a:hover {
+  color: green;
+}
+
+.menuBtn {
+  background: none;
+  border: none;
+  color: #416110;
+  cursor: pointer;
+  display: none;
+  z-index: 20;
+}
+
+.menuMobileOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 40;
+}
+
+.menuMobile {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 180px;
+  height: 100%;
+  background: #ebe7d6;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #416110;
+}
+
+.menuMobile a {
+  text-decoration: none;
+  color: #416110;
+  transition: color 0.3s;
+}
+
+.menuMobile a:hover {
+  color: green;
+}
+
+.closeBtn {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  color: #416110;
+  cursor: pointer;
+  margin-bottom: 5px;
+  width: 40px;
+}
+
+.textoPrincipal {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 80px; /* Compensa a altura do navbar fixo */
+}
+
+.textoContainer {
+  width: 100%;
+  margin-left: 34rem;
+  margin-top: 28rem;
+}
+
+.textoContainer h2 {
+  color: #ebe7d6;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: left;
+  margin-bottom: -0.5rem;
+}
+
+.textoContainer h1 {
+  color: #ebe7d6;
+  font-weight: 900;
+  font-size: 36px;
+  margin-top: 8px;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .textoContainer h2 {
+    font-size: 32px;
+  }
+  .textoContainer h1 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .links {
+    display: none;
+    margin-left: 0;
+  }
+  
+  .logoEscrita {
+    display: none;
+  }
+  
+  .fundoBtn{
+    display: flex;
+  }
+
+  .menuBtn {
+    display: block;
+    position: fixed;   
+    top: 20px;         
+    right: 10px;       
+    z-index: 50; 
+    background: #ebe7d6;
+    border-radius: 100px;
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Remove o efeito de mudança de cor no mobile */
+  .navbar.scrolled {
+    background-color: #ebe7d6; /* Mantém a cor original no mobile */
+  }
+  
+  .navbar.scrolled .menuBtn {
+    background: #ebe7d6; /* Mantém a cor original no mobile */
+    color: #416110; /* Mantém a cor original no mobile */
+  }
+  
+  /* Mantém o mesmo z-index no mobile independente do scroll */
+  .navbar-zindex-normal,
+  .navbar-zindex-high {
+    z-index: 100;
+  }
+  
+  .logoRedonda {
+    height: 170px;
+    margin-top: 1rem;
+    margin-left: -1rem;
+    z-index: 30;
+  }
+  
+  .textoPrincipal {
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 80%;
+  }
+  
+  .textoContainer {
+    margin: 15rem 1.5rem 0;
+    text-align: left;
+  }
+  
+  .textoContainer h2,
+  .textoContainer h1 {
+    text-align: left;
+  }
+  
+  .navbar {
+    display: none;
+  }
+
+}
