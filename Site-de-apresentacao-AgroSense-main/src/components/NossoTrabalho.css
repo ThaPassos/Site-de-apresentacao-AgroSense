@@ -1,0 +1,182 @@
+.nossoTrabalho {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ebe7d6;
+  font-family: Novicento;
+}
+
+.conteudoTrabalho {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.navbarTrabalho {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.logoRedondaTrabalho {
+  height: 120px;
+}
+
+.menuBtn {
+  display: none;
+  position: absolute;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.textoNossoTrabalho{
+  font-size: 1.5rem;
+  color: #63981e;
+  font-family: Novicento;
+  margin-top: 1rem;
+}
+
+.textoPrincipalTrabalho {
+  margin-bottom: 8rem;
+}
+
+.titulo {
+  max-width: 100%;
+  height: 11rem;
+  margin-top: -3.5rem;
+}
+
+.icones {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1000px;
+  margin-top: -1rem;
+}
+
+.icone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1 1 180px;
+}
+
+.icone img {
+  width: 155px;
+  height: 155px;
+  margin-bottom: 1.5rem;
+  z-index: 1;
+}
+
+.icone span {
+  font-size: 17px;
+  color: #416110;
+}
+
+.menuBtn {
+  background: none;
+  border: none;
+  color: #416110;
+  cursor: pointer;
+  display: none;
+}
+
+.menuMobileOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 40;
+}
+
+.menuMobile {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 180px;
+  height: 100%;
+  background: #ebe7d6;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #416110;
+}
+
+.menuMobile a {
+  text-decoration: none;
+  color: #416110;
+  transition: color 0.3s;
+}
+
+.menuMobile a:hover {
+  color: green;
+}
+
+.closeBtn {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  color: #416110;
+  cursor: pointer;
+  margin-bottom: 5px;
+  width: 40px;
+}
+
+@media (max-width: 768px) {
+  .textoPrincipalTrabalho{
+    z-index: 9999;
+    width: 300px;
+    height: 300px;
+    margin-bottom: -9rem;
+  }
+  .icones {
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+  }
+  
+  .icone img{
+    width: 100px;
+    height: 100px;
+  }
+
+  .textoNossoTrabalho{
+    font-size: 13px;
+    margin-top: -8rem;
+    min-width: 100px;
+    margin-bottom: -2rem;
+    z-index: 3;
+  }
+
+  .icone span{
+    font-size: 18px;
+    max-width: 120px;
+  }
+
+  .menuBtn {
+    display: none;
+  }
+
+  .textoPrincipal {
+    margin-bottom: 2rem;
+  }
+
+  .titulo{
+    margin-bottom: -4rem;
+    width: auto;
+    height: auto;
+  }
+}

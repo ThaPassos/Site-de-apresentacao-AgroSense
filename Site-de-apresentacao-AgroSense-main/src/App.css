@@ -1,0 +1,156 @@
+*{
+    background-color: '#ebe7d6';
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  /* overflow-x: hidden; */
+}
+
+.navbar {
+  background-color: #ebe7d6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: background-color 0.3s ease;
+  font-family: Novicento;
+  z-index: 1000; 
+}
+
+.navbar.scrolled {
+  background-color: #416110;
+}
+
+.navbar.scrolled .links a {
+  color: #ebe7d6;
+}
+
+.navbar.scrolled .links a:hover {
+  color: #d1e0c2; 
+}
+
+.navbar.scrolled .menuBtn {
+  color: #ebe7d6; 
+}
+
+.logoEscrita {
+  height: 60px;
+}
+
+.links {
+  display: flex;
+  gap: 100px;
+  color: #416110;
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 280px; 
+}
+
+.links a {
+  text-decoration: none;
+  color: #416110;
+  transition: color 0.3s;
+}
+
+.links a:hover {
+  color: green;
+}
+
+.menuBtn {
+  background: none;
+  border: none;
+  color: #416110;
+  cursor: pointer;
+  display: none;
+  z-index: 1010;
+}
+
+.menuMobileOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 2000; 
+}
+
+.menuMobile {
+  position: absolute;
+  width: 180px;
+  height: 100%;
+  background: #ebe7d6;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #416110;
+  z-index: 2001;
+}
+
+.menuMobile a {
+  text-decoration: none;
+  color: #416110;
+  transition: color 0.3s;
+}
+
+.menuMobile a:hover {
+  color: green;
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  color: #416110;
+  cursor: pointer;
+  margin-bottom: 5px;
+  width: 40px;
+  margin-right: 1rem;
+}
+
+.main-content {
+  margin-top: 80px; 
+}
+
+@media (max-width: 768px) {
+
+  html, body {
+    overflow-x: hidden;
+  }
+  .links {
+    display: none;
+    margin-left: 0;
+    font-family: Novicento;
+  }
+  
+  .logoEscrita {
+    display: none;
+  }
+  
+  .fundoBtn{
+    display: flex;
+  }
+
+  .menuBtn {
+    position: fixed;   
+    margin-right: 15px;      
+    z-index: 1010; 
+    background: #ebe7d667;
+    border-radius: 100px;
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    right: 40px;
+  }
+  
+  .navbar{
+    display: none;
+  }
+  
+}

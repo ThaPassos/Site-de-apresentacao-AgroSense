@@ -1,0 +1,8 @@
+@font-face{
+    font-family: Novicento;
+    src: url("../src//assets//fonts/Novecentosanswide-Normal.otf");
+}
+
+@theme{
+    --font-novicento: Novicento, "sans-serif";
+}
