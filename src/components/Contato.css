@@ -1,0 +1,67 @@
+.container {
+  display: grid;
+  grid-template-rows: 45% 55%; 
+  width: 100%;
+  min-height: 100vh;
+  font-family: Novicento;
+  overflow-x: hidden;
+  margin-bottom: 0;
+}
+
+.espaco {
+  grid-row: 1; 
+  background-color: #ebe7d6; 
+}
+
+.areaInformacoes {
+  grid-row: 2;
+  width: 100%;
+  background-color: #416110;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  color: white;
+  grid-template-columns: 45% 55%;
+}
+
+.areaLogo img {
+  width: 300px;
+  grid-column: 1;
+}
+
+h2{
+    font-size: 20px;
+}
+
+h1{
+    font-size: 22px;
+}
+
+.texto{
+    text-align: left;
+    max-width: 500px;
+    margin-left: 350px;
+    margin-top: 60px;
+    color: #416110;
+}
+
+.email{
+    text-decoration: underline;
+}
+
+.informacos {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-right: 9rem;
+}
+
+.redesSociais .imagens {
+  display: flex;
+  gap: 1rem;
+}
+
+.imagens img{
+    width: 55px;
+}

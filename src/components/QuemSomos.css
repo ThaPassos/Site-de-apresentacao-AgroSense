@@ -1,0 +1,172 @@
+.quemsomos {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  font-family:Novicento;
+  display: grid;
+  grid-template-columns: 30% 30% 40%;
+  grid-template-rows: 47% 47% 6%;
+  z-index: 0;
+}
+
+.backgroundQuemSomos {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  height: 100%;
+}
+
+.elementoTexto{
+    grid-column: 3;
+    grid-row: 2;
+    z-index: 2;
+    width: 600px;
+}
+
+.LogoEscitaTexto{
+  margin-top: 56px;
+  display: inline;
+  height: 55px;
+  vertical-align: middle;
+  margin-left: -5px;
+}
+
+.TextoApresentaçãoCom{
+  position: absolute;
+  grid-column: 3;
+  grid-row: 1;
+  color: #ebe7d6;
+  z-index: 0;
+  max-width: 400px;
+  font-weight: bold;
+  font-size: 20px;
+  top: 70px;
+  left: 190px;
+}
+
+.TextoApresentaçãoLogo{
+  grid-column: 3;
+  grid-row: 1;
+  color: #ebe7d6;
+  z-index: 0;
+  max-width: 400px;
+  top: 1.5px;
+  left: 250px;
+  position: absolute;
+}
+.TextoApresentação{
+  margin-top: 90px;
+  grid-column: 3;
+  grid-row: 1;
+  color: #ebe7d6;
+  z-index: 0;
+  max-width: 440px;
+  text-align: center; 
+  justify-self: center;
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 180px;
+}
+
+.long-shadow {
+  font-size: 45px;
+  margin-left: 40px;
+  font-weight: bold;
+  color: #f0f0f0; 
+  display: inline-block;
+  max-width: 400px;
+  padding: 20px;
+  grid-column: 3;
+  grid-row: 2;
+  z-index: 0;
+    text-shadow:
+    1px 1px #63981e,
+    2px 2px #63981e,
+    3px 3px #63981e,
+    4px 4px #63981e,
+    5px 5px #63981e,
+    6px 6px #63981e,
+    7px 7px #63981e,
+    8px 8px #63981e,
+    9px 9px #63981e,
+    10px 10px #63981e,
+    11px 11px #63981e,
+    12px 12px #63981e,
+    13px 13px #63981e,
+    14px 14px #63981e,
+    15px 15px #63981e,
+    16px 16px #63981e,
+    17px 17px #63981e,
+    18px 18px #63981e,
+    19px 19px #63981e,
+    20px 20px #63981e,
+    21px 21px #63981e,
+    22px 22px #63981e,
+    23px 23px #63981e,
+    24px 24px #63981e,
+    25px 25px #63981e,
+    26px 26px #63981e,
+    27px 27px #63981e,
+    28px 28px #63981e,
+    29px 29px #63981e,
+    30px 30px #63981e,
+    31px 31px #63981e,
+    32px 32px #63981e,
+    33px 33px #63981e,
+    34px 34px #63981e,
+    35px 35px #63981e,
+    36px 36px #63981e,
+    37px 37px #63981e,
+    38px 38px #63981e,
+    39px 39px #63981e,
+    40px 40px #63981e,
+    41px 41px #63981e,
+    42px 42px #63981e,
+    43px 43px #63981e,
+    44px 44px #63981e,
+    45px 45px #63981e,
+    46px 46px #63981e,
+    47px 47px #63981e,
+    48px 48px #63981e,
+    49px 49px #63981e,
+    50px 50px #63981e;
+}
+
+.footer{
+  grid-row: 3;
+  background-color: #ebe7d6;
+  z-index: 1;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+@media (max-width: 768px) {
+  .LogoEscitaTexto{
+    
+  }
+
+  .TextoApresentaçãoCom{
+    font-size: 15px;
+    margin-left: -300px;
+  }
+
+  .TextoApresentaçãoLogo{
+    margin-left: -300px;
+  }
+
+  .TextoApresentação{
+    font-size: 15px;
+    max-width: 200px;
+    min-width: 260px;
+  }
+
+  .long-shadow{
+    font-size: 15px;
+    min-width: 120px;
+    margin-left: -80px;
+    margin-top: 90px;
+  }
+
+}
